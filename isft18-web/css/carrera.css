@@ -1,0 +1,374 @@
+/* ========================================
+   CSS NORMALIZADO PARA PÁGINAS DE CARRERAS
+   Diseño profesional y corporativo
+   ======================================== */
+
+/* Variables globales - Paleta profesional */
+:root {
+    --color-primary: #003366;      /* Navy profesional */
+    --color-secondary: #1a4d7d;    /* Navy medio */
+    --color-accent: #C5A572;       /* Dorado elegante */
+    --color-dark: #1a1a1a;
+    --color-gray: #666666;
+    --color-gray-light: #e0e0e0;
+    --color-light: #f8f9fa;
+    --color-white: #ffffff;
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 8px rgba(0,0,0,0.12);
+    --shadow-lg: 0 10px 25px rgba(0,0,0,0.15);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-sm);
+}
+
+/* HEADER */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-gray-light);
+    z-index: 1000;
+    height: 73px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 73px;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    letter-spacing: -0.5px;
+}
+
+.nav__logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.btn-back {
+    padding: 0.625rem 1.75rem;
+    background-color: transparent;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: var(--transition);
+}
+
+.btn-back:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* HERO DE CARRERA */
+.carrera-hero {
+    margin-top: 73px;
+    padding: var(--spacing-xl) 0;
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+    color: var(--color-white);
+    text-align: center;
+}
+
+.carrera-hero__icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto var(--spacing-md);
+    background: linear-gradient(135deg, var(--color-accent), #d4b883);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.carrera-hero__title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 5vw, 3rem);
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -1px;
+}
+
+.carrera-hero__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.9;
+    letter-spacing: 0.3px;
+}
+
+.carrera-hero__badges {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.625rem 1.75rem;
+    background-color: rgba(255,255,255,0.15);
+    color: var(--color-white);
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    border: 1px solid rgba(255,255,255,0.3);
+    backdrop-filter: blur(10px);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge--gold {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    border-color: var(--color-accent);
+}
+
+/* INFORMACIÓN DE LA CARRERA */
+.carrera-info {
+    padding: var(--spacing-xl) 0;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.info-card {
+    background-color: var(--color-white);
+    padding: var(--spacing-md);
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--color-gray-light);
+    transition: var(--transition);
+}
+
+.info-card:hover {
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.info-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+
+.info-card p {
+    color: var(--color-gray);
+    line-height: 1.7;
+}
+
+/* DESCRIPCIÓN */
+.carrera-descripcion {
+    max-width: 900px;
+    margin: 0 auto var(--spacing-xl);
+}
+
+.carrera-descripcion h2 {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.carrera-descripcion h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+}
+
+.carrera-descripcion h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-top: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.3px;
+    font-weight: 600;
+}
+
+.carrera-descripcion p {
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.8;
+}
+
+.carrera-descripcion ul {
+    list-style: none;
+    margin-bottom: var(--spacing-md);
+}
+
+.carrera-descripcion ul li {
+    padding: 0.5rem 0;
+    color: var(--color-gray);
+    padding-left: 1.5rem;
+    position: relative;
+    line-height: 1.7;
+}
+
+.carrera-descripcion ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.4;
+}
+
+/* CTA */
+.carrera-cta {
+    background-color: var(--color-light);
+    padding: var(--spacing-lg);
+    border-radius: 8px;
+    border: 1px solid var(--color-gray-light);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.carrera-cta h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.5px;
+}
+
+.carrera-cta p {
+    color: var(--color-gray);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.875rem 2.5rem;
+    font-family: var(--font-heading);
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.btn--primary:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: var(--spacing-xl);
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    border-top: 3px solid var(--color-accent);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .carrera-hero__icon {
+        font-size: 3.5rem;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
