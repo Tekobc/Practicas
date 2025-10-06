@@ -37,7 +37,7 @@ Sitio web institucional profesional y responsive para el Instituto Superior de F
 
 ```
 isft18-web/
-├── index-nuevo.html                    # Página principal
+├── index.html                    # Página principal
 ├── css/
 │   ├── styles-nuevo.css               # Estilos de página principal
 │   └── carrera.css                    # Estilos de páginas de carreras
@@ -103,7 +103,7 @@ isft18-web/
 ## 🚀 Cómo Usar
 
 ### Opción 1: Abrir directamente
-Abre `index-nuevo.html` en tu navegador
+Abre `index.html` en tu navegador
 
 ### Opción 2: Servidor local
 ```powershell
@@ -117,7 +117,7 @@ npx http-server
 php -S localhost:8000
 ```
 
-Luego abre: `http://localhost:8000/index-nuevo.html`
+Luego abre: `http://localhost:8000/index.html`
 
 ## 📝 Historial de Cambios
 
