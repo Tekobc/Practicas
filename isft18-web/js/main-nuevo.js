@@ -69,6 +69,17 @@ if (nextBtn) {
     nextBtn.addEventListener('click', () => moveCarousel('next'));
 }
 
+
+let autoSlide = setInterval(() => moveCarousel('next'), 5000); // Mover carrousel c/5 segundos
+
+// Pausar auto-slide al hover
+const carousel = document.querySelector('.carreras-track'); 
+carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
+carousel.addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => moveCarousel('next'), 5000);
+});
+
+
 // Actualizar en resize
 window.addEventListener('resize', () => {
     updateCardsPerView();
