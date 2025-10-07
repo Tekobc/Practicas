@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Slider de Carreras</title>
+
+  <!-- ✅ Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lista-carreras {
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+
+    .tarjeta-carrera {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      min-height: 150px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tarjeta-carrera h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta-carrera p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    }
+
+    .swiper-pagination-bullet {
+      background: #666;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="lista-carreras">
+    <div class="swiper carrerasSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="tarjeta-carrera">
+            <h3>Tecnicatura en Programación</h3>
+            <p>Aprendé desarrollo de software y bases de datos.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tarjeta-carrera">
+            <h3>Tecnicatura en Redes</h3>
+            <p>Configuración y mantenimiento de infraestructuras de red.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tarjeta-carrera">
+            <h3>Tecnicatura en Administración</h3>
+            <p>Gestión empresarial y liderazgo de proyectos.</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="tarjeta-carrera">
+            <h3>Tecnicatura en Logística</h3>
+            <p>Optimización de procesos de distribución y transporte.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Paginación -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Botones -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+
+  <!-- ✅ Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper(".carrerasSwiper", {
+      slidesPerView: 1.2,
+      spaceBetween: 15,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 2.5 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+  </script>
+
+</body>
+</html>

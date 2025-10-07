@@ -3,32 +3,34 @@
    ======================================== */
 :root {
     /* Colores principales - Paleta académica profesional */
-    --color-primary: #003366;      /* Azul marino institucional */
+    --color-primary: #003366;
+    /* Azul marino institucional */
     --color-primary-light: #0D47A1;
-    --color-accent: #C5A572;       /* Dorado elegante */
+    --color-accent: #C5A572;
+    /* Dorado elegante */
     --color-secondary: #1a4d7d;
     --color-dark: #1a1a1a;
     --color-gray: #666666;
     --color-gray-light: #e8e8e8;
     --color-light: #f8f9fa;
     --color-white: #ffffff;
-    
+
     /* Tipografía profesional */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    
+
     /* Espaciado */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
     --spacing-md: 2rem;
     --spacing-lg: 3rem;
     --spacing-xl: 5rem;
-    
+
     /* Sombras sutiles y profesionales */
-    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
-    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
-    --shadow-lg: 0 8px 30px rgba(0,0,0,0.12);
-    
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.12);
+
     /* Transiciones suaves */
     --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -227,11 +229,9 @@ ul {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        135deg,
-        rgba(0, 51, 102, 0.85) 0%,
-        rgba(26, 77, 125, 0.7) 100%
-    );
+    background: linear-gradient(135deg,
+            rgba(0, 51, 102, 0.85) 0%,
+            rgba(26, 77, 125, 0.7) 100%);
 }
 
 .hero__content {
@@ -570,10 +570,15 @@ ul {
 @media (min-width: 1024px) {
     .carrera-card {
         flex: 0 0 calc(33.333% - var(--spacing-md));
+
     }
-    
+
     .hero {
         height: 80vh;
+    }
+
+    .lista-carreras{
+        display: none;
     }
 }
 
@@ -593,16 +598,83 @@ ul {
         box-shadow: var(--shadow-lg);
         transition: left 0.3s ease;
     }
-    
+
     .nav__menu.active {
         left: 0;
     }
-    
+
     .nav__toggle {
         display: flex;
     }
-    
+
     .section-title {
         font-size: 2rem;
     }
+
+    .carrera-card, .slider-controls {
+        display: none;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    .lista-carreras {
+      width: 100%;
+      padding: 20px 0;
+      margin-top: -100px;
+      margin-bottom: -80px;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+
+    .tarjeta-carrera {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      min-height: 300px;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      justify-content: space-evenly;
+      margin: auto;
+    }
+
+    .tarjeta-carrera h3 {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .tarjeta-carrera p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    }
+
+    .swiper-pagination-bullet {
+      background: #666;
+    }
+
+    img{
+        border-radius: 16px;
+        margin-bottom: 10px;
+        height: 150px;
+        min-height: 150px;
+        object-fit: cover;
+        /* box-shadow: 0 2px 8px rgba(0,0,0,0.1); */
+    }
+
 }

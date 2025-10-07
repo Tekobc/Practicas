@@ -19,6 +19,29 @@ navLinks.forEach(link => {
     });
 });
 
+const swiper = new Swiper(".carrerasSwiper", {
+      slidesPerView: 1.05,
+      spaceBetween: 15,
+      centeredSlides: true,
+      loop: true,
+      autoplay: {
+        delay: 7000,
+        disableOnInteraction: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        640: { slidesPerView: 2.5 },
+        1024: { slidesPerView: 3 },
+      },
+    });
+
 // ========================================
 // CARRUSEL DE CARRERAS
 // ========================================
@@ -70,15 +93,14 @@ if (nextBtn) {
 }
 
 
-let autoSlide = setInterval(() => moveCarousel('next'), 5000); // Mover carrousel c/5 segundos
+let autoSlide = setInterval(() => moveCarousel('next'), 7000); // Mover carrousel c/5 segundos
 
 // Pausar auto-slide al hover
 const carousel = document.querySelector('.carreras-track'); 
 carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
 carousel.addEventListener('mouseleave', () => {
-  autoSlide = setInterval(() => moveCarousel('next'), 5000);
+  autoSlide = setInterval(() => moveCarousel('next'), 7000);
 });
-
 
 // Actualizar en resize
 window.addEventListener('resize', () => {
