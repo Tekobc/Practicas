@@ -3,11 +3,11 @@
    ======================================== */
 :root {
     /* Colores principales - Paleta académica profesional */
-    --color-primary: #003366;
-    /* Azul marino institucional */
+    --color-primary: #003366; /* Azul marino institucional */
+    
     --color-primary-light: #0D47A1;
-    --color-accent: #C5A572;
-    /* Dorado elegante */
+    --color-accent: #C5A572; /* Dorado elegante */
+    
     --color-secondary: #1a4d7d;
     --color-dark: #1a1a1a;
     --color-gray: #666666;
