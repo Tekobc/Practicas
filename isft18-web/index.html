@@ -10,6 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles-nuevo.css">
@@ -61,6 +67,7 @@
         <div class="container">
             <h2 class="section-title">Nuestras Carreras</h2>
             
+            <!-- Carreras slider web & tablets -->
             <div class="carreras-slider" id="carrerasSlider">
                 <div class="carreras-track">
                     
@@ -152,6 +159,62 @@
                 </div>
             </div>
 
+            <!-- Carreras slider mobile -->
+            <div class="lista-carreras">
+                <div class="swiper carrerasSwiper">
+                    <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="tarjeta-carrera">
+                        <img src="assets/images/contabiliad.jpg" alt="Administración Contable">
+                        <h3>Tecnicatura Superior en Administración Contable</h3>
+                        <p>Formación integral en gestión organizacional y empresarial.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tarjeta-carrera">
+                        <img src="assets/images/enfermeria.jpg" alt="Enfermería">
+                        <h3>Tecnicatura Superior en Enfermería</h3>
+                        <p>Formación integral para el cuidado de la salud.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tarjeta-carrera">
+                        <img src="assets/images/alimentos.jpg" alt="Alimentos">
+                        <h3>Tecnicatura Superior en Alimentos</h3>
+                        <p>Formación en tecnología alimentaria y bromatología.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tarjeta-carrera">
+                        <img src="assets/images/software.jpg" alt="Desarrollo de Software">
+                        <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+                        <p>Formación en desarrollo de aplicaciones y sistemas.</p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="tarjeta-carrera">
+                        <img src="assets/images/administracionpublica.jpg" alt="Administración Pública">
+                        <h3>Tecnicatura Superior en Administración Pública</h3>
+                        <p>Formación en gestión gubernamental y políticas públicas.</p>
+                        </div>
+                    </div>
+
+                    </div>
+
+                    <!-- Paginación (puntitos) -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Botones opcionales -->
+                    <!-- <div class="swiper-button-next"></div> -->
+                    <!-- <div class="swiper-button-prev"></div> -->
+                </div>
+            </div>
+
             <!-- Controles del carrusel -->
             <div class="slider-controls">
                 <button class="slider-btn slider-btn--prev" id="prevBtn" aria-label="Anterior">←</button>
@@ -189,6 +252,7 @@
     </footer>
 
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main-nuevo.js"></script>
 </body>
 </html>
