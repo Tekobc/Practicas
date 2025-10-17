@@ -93,13 +93,13 @@ if (nextBtn) {
 }
 
 
-let autoSlide = setInterval(() => moveCarousel('next'), 7000); // Mover carrousel c/5 segundos
+// let autoSlide = setInterval(() => moveCarousel('next'), 7000); // Mover carrousel c/5 segundos
 
 // Pausar auto-slide al hover
 const carousel = document.querySelector('.carreras-track'); 
 carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
 carousel.addEventListener('mouseleave', () => {
-  autoSlide = setInterval(() => moveCarousel('next'), 7000);
+//   autoSlide = setInterval(() => moveCarousel('next'), 7000);
 });
 
 // Actualizar en resize
