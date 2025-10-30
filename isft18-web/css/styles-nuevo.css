@@ -665,7 +665,27 @@ ul {
 /* ========================================
    RESPONSIVE - DESKTOP
    ======================================== */
-@media (max-width: 1024px) {
+/* Estilos por defecto (mobile-first) */
+.lista-carreras {
+    display: block; /* Visible en celulares */
+}
+
+.carreras-slider {
+    display: none; /* Oculto en celulares */
+}
+
+/* Media query para tablets y computadoras */
+@media (min-width: 769px) {
+    .lista-carreras {
+        display: none; /* Oculto en tablets/computadoras */
+    }
+
+    .carreras-slider {
+        display: block; /* Visible en tablets/computadoras */
+    }
+}
+
+@media (min-width: 1024px) {
     .carrera-card {
         flex: 0 0 calc(33.333% - 1rem);
     }
@@ -697,6 +717,7 @@ ul {
     }
 
     footer{
+
         .footer-section {
             h3{
                 font-size: 1.5rem;
@@ -756,6 +777,46 @@ ul {
 /* ========================================
    RESPONSIVE - MOBILE
    ======================================== */
+@media (min-width: 820px) and (max-width: 912px){
+    footer{
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .footer-section {
+            h3{
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            ul{
+                li{
+                    font-size: 1.7rem;
+                    svg{
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+            }
+
+            p{
+                font-size: 1.7rem;
+                text-align: center;
+            }
+
+            .footer-carreras{
+                a{
+                    font-size: 1.7rem;
+                    line-height: 1;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 768px) {
     .nav__menu {
         position: fixed;
@@ -796,7 +857,7 @@ ul {
     .lista-carreras {
       width: 100%;
       padding: 20px 0;
-      margin-top: -100px;
+      margin-top: -30px;
       margin-bottom: -80px;
     }
 
@@ -876,6 +937,10 @@ ul {
         
         .contact-item-display{
             gap: 1.5rem;
+            display: flex;
+            /* flex-direction: column; */
+            flex-wrap: nowrap;
+            align-items: center;
         }
 
         .contacto-maps{
@@ -889,6 +954,7 @@ ul {
         .footer-section {
             h3{
                 font-size: 2rem;
+                text-align: center;
             }
 
             ul{
