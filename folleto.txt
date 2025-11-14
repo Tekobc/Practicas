@@ -1,0 +1,17 @@
+normalizar header. fuente tamaño de nav bar & logo
+
+cambiar asignaturas de carreras en cada web haciendolas columnas 
+
+profesionalizar texto de campo laboral, cambiarlo para que sea mas llamativo - re -design
+
+disminuir tamaño de card de carreras para que al clickear carreras se muestre el total de la seccion y quede justo el tamaño de section class=carrera con el de la pantalla
+
+re diseñar el footer para disponibilizar contacto en todo momento 
+
+
+Re diseñar seccion contacto para que: haya maps en locacion.
+
+listado horarios y listados de carreras (servicios) 
+
+
+

@@ -17,20 +17,42 @@
             <nav class="nav">
                 <a href="../index.html" class="nav__logo">
                     <img src="../logo_isft.png" alt="ISFT N°118" width="50" height="50">
-                    <span>ISFT N°118</span>
+                    <span>ISFT N°118 San Pedro</span>
                 </a>
                 <a href="../index.html" class="btn-back">← Volver al inicio</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO DE CARRERA -->
-    <section class="carrera-hero">
-        <div class="container">
-            <div class="carrera-hero__icon">ADC</div>
+<!-- HERO DE LA CARRERA -->
+    <section class="hero" id="inicio">
+        <div class="hero__image">
+            <img src="../assets/images/hero-contable.jpeg" alt="" loading="eager">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <!-- <div class="carrera-hero__icon">ADC</div> -->
+             <div class="carrera-hero__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" role="img" aria-labelledby="titleAdmContable descAdmContable">
+                <title id="titleAdmContable">Administración Contable</title>
+                <desc id="descAdmContable">Icono de calculadora y libro representando contabilidad y gestión.</desc>
+                <rect x="6" y="10" width="34" height="44" rx="3" fill="#ffffff" stroke="#0b3d91" stroke-width="2"/>
+                <rect x="22" y="14" width="14" height="8" rx="1" fill="#0b3d91"/>
+                <g fill="#0b3d91">
+                    <rect x="10" y="26" width="6" height="6" rx="1"/>
+                    <rect x="18" y="26" width="6" height="6" rx="1"/>
+                    <rect x="26" y="26" width="6" height="6" rx="1"/>
+                    <rect x="10" y="34" width="6" height="6" rx="1"/>
+                    <rect x="18" y="34" width="14" height="6" rx="1"/>
+                </g>
+                <rect x="42" y="12" width="16" height="40" rx="2" fill="#ffb84d" stroke="#0b3d91" stroke-width="1.5"/>
+                <line x1="44" y1="18" x2="56" y2="18" stroke="#0b3d91" stroke-width="1.5" />
+                <line x1="44" y1="24" x2="56" y2="24" stroke="#0b3d91" stroke-width="1.2" />
+                </svg>
+             </div>
             <h1 class="carrera-hero__title">Tecnicatura Superior en Administración Contable</h1>
             <p class="carrera-hero__subtitle">Formación integral en gestión organizacional y empresarial</p>
-            <div class="carrera-hero__badges">
+            <div class="hero__badges">
                 <span class="badge badge--gold">100% GRATUITO</span>
                 <span class="badge">3 AÑOS</span>
                 <span class="badge">RESOLUCIÓN N° 555/23</span>
@@ -65,52 +87,169 @@
                 <h2>Sobre la carrera</h2>
                 <p>La Tecnicatura Superior en Administración Contable forma profesionales capacitados para gestionar organizaciones, con sólidos conocimientos en contabilidad, finanzas, gestión tributaria y administración empresarial.</p>
                 
-                <h3>Plan de Estudios</h3>
-                
-                <h4>Primer Año</h4>
-                <ul>
-                    <li>Derecho</li>
-                    <li>Inglés I</li>
-                    <li>Principios de Administración</li>
-                    <li>Economía</li>
-                    <li>Fundamentos de Matemática</li>
-                    <li>Principios de Contabilidad</li>
-                    <li>Gestión Administrativo Contable</li>
-                    <li>Prácticas Profesionalizantes I: Aproximación al Campo Laboral</li>
-                </ul>
+                <div class="plan-estudios">
+                    <h3>Plan de Estudios</h3>
+                    
+                    <div class="anos-grid">
+                        <!-- Primer Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">1°</div>
+                                <div class="ano-titulo">Primer Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">DE</div>
+                                        <div class="asignatura-texto">Derecho</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IN</div>
+                                        <div class="asignatura-texto">Inglés I</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">PA</div>
+                                        <div class="asignatura-texto">Principios de Administración</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">EC</div>
+                                        <div class="asignatura-texto">Economía</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">FM</div>
+                                        <div class="asignatura-texto">Fundamentos de Matemática</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">PC</div>
+                                        <div class="asignatura-texto">Principios de Contabilidad</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">GA</div>
+                                        <div class="asignatura-texto">Gestión Administrativo Contable</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes I: Aproximación al Campo Laboral</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <h4>Segundo Año</h4>
-                <ul>
-                    <li>Inglés II</li>
-                    <li>Tecnologías y Sistemas para la Administración</li>
-                    <li>Matemáticas para la Administración</li>
-                    <li>Derecho Laboral</li>
-                    <li>Derecho Comercial</li>
-                    <li>Contabilidad de Gestión</li>
-                    <li>Costos y Planificación</li>
-                    <li>Matemática Financiera</li>
-                    <li>Prácticas Profesionalizantes II: Diseño de Proyectos de Administración</li>
-                </ul>
+                        <!-- Segundo Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">2°</div>
+                                <div class="ano-titulo">Segundo Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IN</div>
+                                        <div class="asignatura-texto">Inglés II</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">TS</div>
+                                        <div class="asignatura-texto">Tecnologías y Sistemas para la Administración</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">MA</div>
+                                        <div class="asignatura-texto">Matemáticas para la Administración</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">DL</div>
+                                        <div class="asignatura-texto">Derecho Laboral</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">DC</div>
+                                        <div class="asignatura-texto">Derecho Comercial</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">CG</div>
+                                        <div class="asignatura-texto">Contabilidad de Gestión</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">CP</div>
+                                        <div class="asignatura-texto">Costos y Planificación</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">MF</div>
+                                        <div class="asignatura-texto">Matemática Financiera</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes II: Diseño de Proyectos de Administración</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <h4>Tercer Año</h4>
-                <ul>
-                    <li>Administración Financiera</li>
-                    <li>Administración Estratégica</li>
-                    <li>Técnica Impositiva y Laboral</li>
-                    <li>Régimen Tributario</li>
-                    <li>Gestión de Estados Contables</li>
-                    <li>Finanzas de Empresas</li>
-                    <li>Prácticas Profesionalizantes III: Gestión e Implementación de Proyectos de Administración</li>
-                </ul>
+                        <!-- Tercer Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">3°</div>
+                                <div class="ano-titulo">Tercer Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">AF</div>
+                                        <div class="asignatura-texto">Administración Financiera</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">AE</div>
+                                        <div class="asignatura-texto">Administración Estratégica</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">TI</div>
+                                        <div class="asignatura-texto">Técnica Impositiva y Laboral</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">RT</div>
+                                        <div class="asignatura-texto">Régimen Tributario</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">GE</div>
+                                        <div class="asignatura-texto">Gestión de Estados Contables</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">FE</div>
+                                        <div class="asignatura-texto">Finanzas de Empresas</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes III: Gestión e Implementación de Proyectos de Administración</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Campo Laboral</h3>
-                <ul>
-                    <li>Macroeconomía y Finanzas</li>
-                    <li>Gestión contable y financiera</li>
-                    <li>Auditoría y control de gestión</li>
-                    <li>Recursos humanos</li>
-                    <li>Asesoramiento tributario</li>
-                </ul>
+                <div class="campo-laboral">
+                    <h3>Campo Laboral</h3>
+                    <div class="campo-grid">
+                        <div class="campo-item">
+                            <div class="campo-icono">💰</div>
+                            <div class="campo-texto">Macroeconomía y Finanzas</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">📊</div>
+                            <div class="campo-texto">Gestión contable y financiera</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">🔍</div>
+                            <div class="campo-texto">Auditoría y control de gestión</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">👥</div>
+                            <div class="campo-texto">Recursos humanos</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">📝</div>
+                            <div class="campo-texto">Asesoramiento tributario</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="carrera-cta">
@@ -122,10 +261,59 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
+   <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 ISFT N°118 San Pedro. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <!-- Información Institucional -->
+                <div class="footer-section">
+                    <h3>ISFT N°118 San Pedro</h3>
+                    <p>Instituto Superior de Formación Técnica dedicado a la excelencia académica y formación profesional integral.</p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>
+                            <!-- <span class="icon">📍</span> -->
+                            <!-- <img class="icons" src="assets/icons/map-pin.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                            <span><strong>Dirección:</strong><br>Bottaro 995, San Pedro<br>Buenos Aires, Argentina</span>
+                        </li>
+                        <li>
+                            <!-- <span class="icon">📧</span> -->
+                            <!-- <img class="icons" src="assets/icons/mail.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+                            <span><strong>Email:</strong><br><a href="mailto:isft118@abc.gob.ar">isft118@abc.gob.ar</a></span>
+                        </li>
+                        <li>
+                            <!-- <span class="icon">🕒</span> -->
+                            <!-- <img class="icons" src="assets/icons/clock-hour-7.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-clock-hour-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-4.007 8.777l.007 -.117v-5a1 1 0 0 0 -2 0v4.696l-1.832 2.75a1 1 0 0 0 .184 1.316l.093 .07a1 1 0 0 0 1.387 -.277l2.024 -3.038l.06 -.116l.032 -.081l.03 -.109z" /></svg>
+                            <span><strong>Horario:</strong><br>Lunes a Viernes<br>19:00 a 23:00 hs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nuestras Carreras -->
+                <div class="footer-section">
+                    <h3>Nuestras Carreras</h3>
+                    <div class="footer-carreras">
+                        <a href="adm-contable.html">Administración Contable</a>
+                        <a href="enfermeria.html">Enfermería</a>
+                        <a href="alimentos.html">Alimentos</a>
+                        <a href="software.html">Desarrollo de Software</a>
+                        <a href="adm-publica.html">Administración Pública</a>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto Superior de Formación Técnica N°118 San Pedro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

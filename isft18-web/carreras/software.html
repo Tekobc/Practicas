@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tecnicatura en Desarrollo de Software | ISFT N°18 San Pedro</title>
+    <title>Tecnicatura en Desarrollo de Software | ISFT N°118 San Pedro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
@@ -17,23 +17,42 @@
             <nav class="nav">
                 <a href="../index.html" class="nav__logo">
                     <img src="../logo_isft.png" alt="ISFT N°118" width="50" height="50">
-                    <span>ISFT N°118</span>
+                    <span>ISFT N°118 San Pedro</span>
                 </a>
                 <a href="../index.html" class="btn-back">← Volver al inicio</a>
             </nav>
         </div>
     </header>
 
-    <!-- HERO DE CARRERA -->
-    <section class="carrera-hero">
-        <div class="container">
-            <div class="carrera-hero__icon">DSW</div>
+    <!-- HERO DE LA CARRERA -->
+    <section class="hero" id="inicio">
+        <div class="hero__image">
+            <img src="../assets/images/hero-software.jpeg" alt="" loading="eager">
+        </div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+            <!-- <div class="carrera-hero__icon">DSW</div> -->
+             <div class="carrera-hero__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="96" height="96" role="img" aria-labelledby="titleSoftware descSoftware">
+                <title id="titleSoftware">Desarrollo de Software</title>
+                <desc id="descSoftware">Icono de laptop con código y diagramas representando programación y desarrollo de aplicaciones.</desc>
+                <rect x="8" y="14" width="48" height="30" rx="3" fill="#ffffff" stroke="#0b3d91" stroke-width="2"/>
+                <rect x="14" y="20" width="36" height="18" fill="#0b3d91"/>
+                <g fill="#ffb84d">
+                    <path d="M22 26h4v2h-4z"/>
+                    <path d="M34 26h6v2h-6z"/>
+                    <path d="M26 30l-3 3 3 3" stroke="#ffb84d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M38 30l3 3-3 3" stroke="#ffb84d" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+                <rect x="6" y="46" width="52" height="3.5" rx="1" fill="#f4f6f8" stroke="#0b3d91" stroke-width="1"/>
+                </svg>
+             </div>
             <h1 class="carrera-hero__title">Tecnicatura Superior en Desarrollo de Software</h1>
             <p class="carrera-hero__subtitle">Formación en desarrollo de aplicaciones y sistemas</p>
-            <div class="carrera-hero__badges">
+            <div class="hero__badges">
                 <span class="badge badge--gold">100% GRATUITO</span>
                 <span class="badge">3 AÑOS</span>
-                <span class="badge">RESOLUCIÓN N° 587/19</span>
+                <span class="badge">RESOLUCIÓN N° 555/23</span>
             </div>
         </div>
     </section>
@@ -49,7 +68,7 @@
                 </div>
                 <div class="info-card">
                     <h3>HORARIO</h3>
-                    <p>Nocturno: 19:00 a 22:00 hs</p>
+                    <p>Nocturno: 19:00 a 23:00 hs</p>
                 </div>
                 <div class="info-card">
                     <h3>MODALIDAD</h3>
@@ -65,48 +84,161 @@
                 <h2>Sobre la carrera</h2>
                 <p>La Tecnicatura Superior en Desarrollo de Software forma profesionales capacitados en programación, desarrollo de aplicaciones web y móviles, bases de datos, redes y gestión de proyectos tecnológicos.</p>
                 
-                <h3>Plan de Estudios</h3>
-                
-                <h4>Primer Año</h4>
-                <ul>
-                    <li>Análisis Matemático</li>
-                    <li>Administración y Sistemas de Base de Datos</li>
-                    <li>Introducción a la Programación</li>
-                    <li>Introducción a las Redes</li>
-                    <li>Sistemas Operativos</li>
-                    <li>Laboratorio de Hardware</li>
-                    <li>Prácticas Profesionalizantes I</li>
-                </ul>
+                <div class="plan-estudios">
+                    <h3>Plan de Estudios</h3>
+                    
+                    <div class="anos-grid">
+                        <!-- Primer Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">1°</div>
+                                <div class="ano-titulo">Primer Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">AM</div>
+                                        <div class="asignatura-texto">Análisis Matemático</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">BD</div>
+                                        <div class="asignatura-texto">Administración y Sistemas de Base de Datos</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IP</div>
+                                        <div class="asignatura-texto">Introducción a la Programación</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IR</div>
+                                        <div class="asignatura-texto">Introducción a las Redes</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">SD</div>
+                                        <div class="asignatura-texto">Sistemas Digitales</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">SO</div>
+                                        <div class="asignatura-texto">Sistemas Operativos</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">LH</div>
+                                        <div class="asignatura-texto">Laboratorio de Hardware</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP1</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes I</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <h4>Segundo Año</h4>
-                <ul>
-                    <li>Inglés I</li>
-                    <li>Desarrollo de Aplicativos Móviles</li>
-                    <li>Álgebra y Lógica</li>
-                    <li>Programación I</li>
-                    <li>Estadística y Probabilidades</li>
-                    <li>Desarrollo de Sistemas Orientados a Objetos</li>
-                    <li>Prácticas Profesionalizantes II</li>
-                </ul>
+                        <!-- Segundo Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">2°</div>
+                                <div class="ano-titulo">Segundo Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IN</div>
+                                        <div class="asignatura-texto">Inglés I</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">DAM</div>
+                                        <div class="asignatura-texto">Desarrollo de Aplicativos Móviles</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">AL</div>
+                                        <div class="asignatura-texto">Álgebra y Lógica</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">P1</div>
+                                        <div class="asignatura-texto">Programación</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">DW</div>
+                                        <div class="asignatura-texto">Diseño Web</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">EP</div>
+                                        <div class="asignatura-texto">Estadística y Probabilidades</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">POO</div>
+                                        <div class="asignatura-texto">Desarrollo de Sistemas Orientados a Objetos</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP2</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes II</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
 
-                <h4>Tercer Año</h4>
-                <ul>
-                    <li>Inglés II</li>
-                    <li>Gestión de Proyectos</li>
-                    <li>Desarrollo de Sistemas Web</li>
-                    <li>Ingeniería de Software</li>
-                    <li>Metodología para pruebas de sistemas</li>
-                    <li>Prácticas Profesionalizantes III</li>
-                </ul>
+                        <!-- Tercer Año -->
+                        <div class="ano-card">
+                            <div class="ano-header">
+                                <div class="ano-numero">3°</div>
+                                <div class="ano-titulo">Tercer Año</div>
+                            </div>
+                            <div class="ano-content">
+                                <div class="asignaturas-grid">
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">I2</div>
+                                        <div class="asignatura-texto">Inglés II</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">GP</div>
+                                        <div class="asignatura-texto">Gestión de Proyectos</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">WB</div>
+                                        <div class="asignatura-texto">Desarrollo de Sistemas Web</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">IS</div>
+                                        <div class="asignatura-texto">Ingeniería de Software</div>
+                                    </div>
+                                    <div class="asignatura-item">
+                                        <div class="asignatura-icon">MP</div>
+                                        <div class="asignatura-texto">Metodología para pruebas de sistemas</div>
+                                    </div>
+                                    <div class="asignatura-item asignatura-practica">
+                                        <div class="asignatura-icon">PP3</div>
+                                        <div class="asignatura-texto">Prácticas Profesionalizantes III</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                <h3>Campo Laboral</h3>
-                <ul>
-                    <li>Desarrollo de aplicaciones web y móviles</li>
-                    <li>Programación y desarrollo de software</li>
-                    <li>Administración de bases de datos</li>
-                    <li>Testing y control de calidad de software</li>
-                    <li>Gestión de proyectos tecnológicos</li>
-                </ul>
+                <div class="campo-laboral">
+                    <h3>Campo Laboral</h3>
+                    <div class="campo-grid">
+                        <div class="campo-item">
+                            <div class="campo-icono">📱</div>
+                            <div class="campo-texto">Desarrollo de aplicaciones web y móviles</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">💻</div>
+                            <div class="campo-texto">Programación y desarrollo de software</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">🗄️</div>
+                            <div class="campo-texto">Administración de bases de datos</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">🔍</div>
+                            <div class="campo-texto">Testing y control de calidad de software</div>
+                        </div>
+                        <div class="campo-item">
+                            <div class="campo-icono">📊</div>
+                            <div class="campo-texto">Gestión de proyectos tecnológicos</div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="carrera-cta">
@@ -121,7 +253,56 @@
     <!-- FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 ISFT N°118 San Pedro. Todos los derechos reservados.</p>
+            <div class="footer-content">
+                <!-- Información Institucional -->
+                <div class="footer-section">
+                    <h3>ISFT N°118 San Pedro</h3>
+                    <p>Instituto Superior de Formación Técnica dedicado a la excelencia académica y formación profesional integral.</p>
+                </div>
+
+                <!-- Contacto -->
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>
+                            <!-- <span class="icon">📍</span> -->
+                            <!-- <img class="icons" src="assets/icons/map-pin.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-map-pin"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z" /></svg>
+                            <span><strong>Dirección:</strong><br>Bottaro 995, San Pedro<br>Buenos Aires, Argentina</span>
+                        </li>
+                        <li>
+                            <!-- <span class="icon">📧</span> -->
+                            <!-- <img class="icons" src="assets/icons/mail.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M22 7.535v9.465a3 3 0 0 1 -2.824 2.995l-.176 .005h-14a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-9.465l9.445 6.297l.116 .066a1 1 0 0 0 .878 0l.116 -.066l9.445 -6.297z" /><path d="M19 4c1.08 0 2.027 .57 2.555 1.427l-9.555 6.37l-9.555 -6.37a2.999 2.999 0 0 1 2.354 -1.42l.201 -.007h14z" /></svg>
+                            <span><strong>Email:</strong><br><a href="mailto:isft118@abc.gob.ar">isft118@abc.gob.ar</a></span>
+                        </li>
+                        <li>
+                            <!-- <span class="icon">🕒</span> -->
+                            <!-- <img class="icons" src="assets/icons/clock-hour-7.svg" alt=""> -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-clock-hour-7"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-4.007 8.777l.007 -.117v-5a1 1 0 0 0 -2 0v4.696l-1.832 2.75a1 1 0 0 0 .184 1.316l.093 .07a1 1 0 0 0 1.387 -.277l2.024 -3.038l.06 -.116l.032 -.081l.03 -.109z" /></svg>
+                            <span><strong>Horario:</strong><br>Lunes a Viernes<br>19:00 a 23:00 hs</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Nuestras Carreras -->
+                <div class="footer-section">
+                    <h3>Nuestras Carreras</h3>
+                    <div class="footer-carreras">
+                        <a href="adm-contable.html">Administración Contable</a>
+                        <a href="enfermeria.html">Enfermería</a>
+                        <a href="alimentos.html">Alimentos</a>
+                        <a href="software.html">Desarrollo de Software</a>
+                        <a href="adm-publica.html">Administración Pública</a>
+                    </div>
+                </div>
+
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto Superior de Formación Técnica N°118 San Pedro. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 

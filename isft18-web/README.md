@@ -1,15 +1,15 @@
-# ISFT N°18 San Pedro - Sitio Web Institucional
+# ISFT N°118 San Pedro - Sitio Web Institucional
 
 ## 📋 Descripción
 
-Sitio web institucional profesional y responsive para el Instituto Superior de Formación Técnica N°18 de San Pedro, Argentina. Diseño moderno y accesible con información completa de las 5 tecnicaturas oficiales.
+Sitio web institucional profesional y responsive para el Instituto Superior de Formación Técnica N°118 de San Pedro, Argentina. Diseño moderno y accesible con información completa de las 5 tecnicaturas oficiales.
 
 ## 🎓 Información del Instituto
 
-- **Nombre:** Instituto Superior de Formación Técnica N°18
+- **Nombre:** Instituto Superior de Formación Técnica N°118
 - **Ubicación:** Bottaro 995, San Pedro, Argentina
 - **Email:** isft18@abc.gob.ar
-- **Horario de cursado:** Lunes a Viernes, 19:00 a 22:00 hs
+- **Horario de cursado:** Lunes a Viernes, 19:00 a 23:00 hs
 
 ## 🚀 Carreras Oficiales (2025)
 
@@ -134,9 +134,9 @@ Luego abre: `http://localhost:8000/index.html`
 
 ## � Contacto
 
-**Email:** isft18@abc.gob.ar  
+**Email:** isft118@abc.gob.ar  
 **Ubicación:** Bottaro 995, San Pedro, Argentina
 
 ---
 
-**Desarrollado con ❤️ para ISFT N°18 San Pedro - 2025**
+**Desarrollado con ❤️ para ISFT N°118 San Pedro - 2025**
