@@ -16,6 +16,9 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+
+    <!-- AOS CSS -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles-nuevo.css">
@@ -26,7 +29,7 @@
     <header class="header" id="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="nav__logo">
+                <a href="#inicio" class="nav__logo">
                     <img src="logo_isft.png" alt="ISFT N°118" width="50" height="50">
                     <span>ISFT N°118 San Pedro</span>
                 </a>
@@ -72,7 +75,7 @@
                 <div class="carreras-track">
                     
                     <!-- Carrera 1: Administración Contable -->
-                    <div class="carrera-card">
+                    <div data-aos="flip-left" data-aos-duration="1200" class="carrera-card">
                         <div class="carrera-card__image">
                             <img src="assets/images/img-contable.jpg" alt="Administración Contable">
                         </div>
@@ -89,7 +92,7 @@
                     </div>
 
                     <!-- Carrera 2: Enfermería -->
-                    <div class="carrera-card">
+                    <div data-aos="flip-left" data-aos-duration="1200" class="carrera-card">
                         <div class="carrera-card__image">
                             <img src="assets/images/img-enfermeria.jpg" alt="Enfermería">
                         </div>
@@ -106,7 +109,7 @@
                     </div>
 
                     <!-- Carrera 3: Alimentos -->
-                    <div class="carrera-card">
+                    <div data-aos="flip-left" data-aos-duration="1200" class="carrera-card">
                         <div class="carrera-card__image">
                             <img src="assets/images/img-alimentos.jpg" alt="Alimentos">
                         </div>
@@ -123,7 +126,7 @@
                     </div>
 
                     <!-- Carrera 4: Desarrollo de Software -->
-                    <div class="carrera-card">
+                    <div data-aos="flip-left" data-aos-duration="1200" class="carrera-card">
                         <div class="carrera-card__image">
                             <img src="assets/images/img-software.jpg" alt="Desarrollo de Software">
                         </div>
@@ -140,7 +143,7 @@
                     </div>
 
                     <!-- Carrera 5: Administración Pública -->
-                    <div class="carrera-card">
+                    <div data-aos="flip-left" data-aos-duration="1200" class="carrera-card">
                         <div class="carrera-card__image">
                             <img src="assets/images/img-publica.jpg" alt="Administración Pública">
                         </div>
@@ -243,29 +246,29 @@
         <div class="container">
             <h2 class="section-title">Contacto</h2>
             <div class="contacto-container">
-                <div class="contacto-maps">
+                <div data-aos="zoom-in" class="contacto-maps">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1660.1314452102704!2d-59.67681271555154!3d-33.67625641602606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f16.5!3m3!1m2!1s0x95ba22c51cbaf147%3A0x7d87f255d2373743!2sBottaro%20995%2C%20B2930%20San%20Pedro%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1760721786500!5m2!1ses!2sar" width="100%" height="450" style="border:0; display:block;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
 
 
                 <div class="contact-item-display">
-                    <div class="contact-item">
+                    <div data-aos="zoom-in" class="contact-item">
                         <h3>Dirección</h3>
                         <p>Bottaro 995<br>San Pedro, Buenos Aires</p>
                     </div>
-                    <div class="contact-item">
+                    <div data-aos="zoom-in" class="contact-item">
                         <h3>Email</h3>
                         <p><a href="mailto:isft118@abc.gob.ar">isft118@abc.gob.ar</a></p>
                     </div>
                 </div>
 
                 <div class="contact-item-display">
-                    <div class="contact-item">
+                    <div data-aos="zoom-in" class="contact-item">
                         <h3>Teléfono</h3>
                         <p><a href="tel:123456789">123456789</a></p>
                     </div>
-                    <div class="contact-item">
+                    <div data-aos="zoom-in" class="contact-item">
                         <h3>Horario</h3>
                         <p>Lunes a Viernes<br>19:00 a 23:00 hs</p>
                     </div>
@@ -325,13 +328,19 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 Instituto Superior de Formación Técnica N°118 San Pedro. Todos los derechos reservados.</p>
+                <p>&copy; Realizado por alumnos de Practicas Profesionalizantes I - 2025. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="module" src="js/main-nuevo.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

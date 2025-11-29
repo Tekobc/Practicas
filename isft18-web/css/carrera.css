@@ -148,6 +148,13 @@ ul {
     letter-spacing: -1px;
 }
 
+.carrera-hero__icon svg {
+    width: 85%;
+    height: 85%;
+    max-width: 90px;
+    max-height: 90px;
+}
+
 .carrera-hero__title {
     font-family: var(--font-heading);
     font-size: clamp(2rem, 5vw, 3rem);
@@ -168,6 +175,8 @@ ul {
     gap: var(--spacing-sm);
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
 .badge {
@@ -183,6 +192,7 @@ ul {
     backdrop-filter: blur(10px);
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-align: center;
 }
 
 .badge--gold {
@@ -632,6 +642,52 @@ ul {
     }
 }
 
+/* Tablets - 769px a 1023px */
+@media (min-width: 769px) and (max-width: 1023px) {
+    .hero {
+        height: 60vh;
+        min-height: 450px;
+    }
+    
+    .carrera-hero__icon {
+        width: 90px;
+        height: 90px;
+    }
+    
+    .carrera-hero__icon svg {
+        width: 85%;
+        height: 85%;
+        max-width: 75px;
+        max-height: 75px;
+    }
+    
+    .carrera-hero__title {
+        font-size: 2.2rem;
+    }
+    
+    footer .footer-section h3 {
+        font-size: 1.1rem;
+    }
+
+    footer .footer-section ul li {
+        font-size: 0.9rem;
+    }
+    
+    footer .footer-section ul li svg {
+        width: 22px;
+        height: 22px;
+    }
+
+    footer .footer-section p {
+        font-size: 0.9rem;
+    }
+
+    footer .footer-carreras a {
+        font-size: 0.85rem;
+    }
+}
+
+/* Tablets - 900px o menor */
 @media (max-width: 900px) {
     .anos-grid {
         grid-template-columns: 1fr;
@@ -646,94 +702,326 @@ ul {
     .campo-grid {
         grid-template-columns: 1fr;
     }
+    
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
 }
 
+/* Mobile - Menor a 768px */
 @media (max-width: 768px) {
+    /* Header y navegación */
+    .nav__logo span {
+        font-size: 0.85rem;
+    }
+    
+    .btn-back {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Hero */
+    .hero {
+        height: 50vh;
+        min-height: 400px;
+    }
+    
     .carrera-hero__icon {
-        font-size: 3.5rem;
+        width: 75px;
+        height: 75px;
+        margin-bottom: 1.5rem;
+    }
+    
+    .carrera-hero__icon svg {
+        width: 85%;
+        height: 85%;
+        max-width: 65px;
+        max-height: 65px;
+    }
+    
+    .carrera-hero__title {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+    
+    .carrera-hero__subtitle {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .badge {
+        padding: 0.625rem 1.25rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Info cards */
+    .carrera-info {
+        padding: 2.5rem 0;
     }
     
     .info-grid {
         grid-template-columns: 1fr;
+        gap: 1rem;
     }
     
-    .ano-numero {
-        font-size: 1.8rem;
+    .info-card {
+        padding: 1.5rem;
     }
     
-    .ano-titulo {
+    .info-card h3 {
+        font-size: 1.1rem;
+    }
+    
+    .info-card p {
         font-size: 0.9rem;
     }
     
-    .asignatura-texto {
+    /* Descripción */
+    .carrera-descripcion h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    .carrera-descripcion h2::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .carrera-descripcion > p {
+        text-align: center;
+    }
+    
+    .carrera-descripcion h3 {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+    }
+    
+    .carrera-descripcion p,
+    .carrera-descripcion ul li {
+        font-size: 0.9rem;
+    }
+    
+    /* Plan de estudios */
+    .plan-estudios {
+        margin: 2.5rem 0;
+    }
+    
+    .plan-estudios h3 {
+        font-size: 1.5rem;
+        max-width: 100%;
+        padding-bottom: 0.75rem;
+    }
+    
+    .anos-grid {
+        gap: 1.5rem;
+    }
+    
+    .ano-numero {
+        font-size: 1.6rem;
+    }
+    
+    .ano-titulo {
         font-size: 0.85rem;
     }
-}
+    
+    .ano-content {
+        padding: 1rem;
+    }
+    
+    .asignatura-item {
+        padding: 0.75rem 0.875rem;
+        gap: 0.625rem;
+    }
+    
+    .asignatura-icon {
+        width: 28px;
+        height: 28px;
+        font-size: 0.7rem;
+    }
+    
+    .asignatura-texto {
+        font-size: 0.825rem;
+        line-height: 1.25;
+    }
+    
+    /* Campo laboral */
+    .campo-laboral {
+        padding: 1.5rem;
+        margin: 2.5rem 0;
+    }
+    
+    .campo-laboral h3 {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .campo-grid {
+        gap: 0.875rem;
+    }
+    
+    .campo-item {
+        padding: 1rem;
+        gap: 0.875rem;
+    }
+    
+    .campo-icono {
+        width: 36px;
+        height: 36px;
+        font-size: 1.1rem;
+    }
+    
+    .campo-texto {
+        font-size: 0.875rem;
+    }
+    
+    /* CTA */
+    .carrera-cta {
+        padding: 2rem 1.5rem;
+    }
+    
+    .carrera-cta h3 {
+        font-size: 1.5rem;
+    }
+    
+    .carrera-cta p {
+        font-size: 0.9rem;
+    }
+    
+    /* Footer optimizado para mobile */
+    footer {
+        padding: 2rem 0 1.5rem;
+    }
+    
+    footer .footer-content {
+        gap: 2.5rem;
+    }
+    
+    footer .footer-section {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    footer .footer-section h3 {
+        font-size: 1.35rem;
+        margin-bottom: 1.25rem;
+    }
 
-@media (max-width: 1024px) {
-    footer{
-        .footer-section {
-            h3{
-                font-size: 1.5rem;
-            }
+    footer .footer-section ul li {
+        font-size: 1rem;
+        gap: 0.6rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    footer .footer-section ul li svg {
+        width: 26px;
+        height: 26px;
+        flex-shrink: 0;
+        margin-top: 0;
+    }
+    
+    footer .footer-section ul li span {
+        text-align: center;
+    }
 
-            ul{
-                li{
-                    font-size: 1.2rem;
-                    svg{
-                        width: 30px;
-                        height: 30px;
-                    }
-                }
-            }
+    footer .footer-section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        text-align: center;
+    }
 
-            p{
-                font-size: 1.5rem;
-            }
-
-            .footer-carreras{
-                a{
-                    font-size: 1.5rem;
-                    line-height: 1;
-                }
-            }
-        }
+    footer .footer-carreras {
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+        text-align: center;
+    }
+    
+    footer .footer-carreras a {
+        font-size: 1rem;
+        padding: 0.55rem 0;
+        text-align: center;
+    }
+    
+    footer .footer-bottom p {
+        font-size: 0.85rem;
+        padding: 0 1rem;
+        line-height: 1.5;
     }
 }
 
-@media (max-width: 768px) {
-
-    footer{
-        .footer-section {
-            h3{
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            ul{
-                li{
-                    font-size: 1.7rem;
-                    svg{
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-            }
-
-            p{
-                font-size: 1.7rem;
-                text-align: center;
-            }
-
-            .footer-carreras{
-                a{
-                    font-size: 1.7rem;
-                    line-height: 1;
-                }
-            }
-        }
+/* Mobile pequeño - Menor a 480px */
+@media (max-width: 480px) {
+    .hero {
+        height: 45vh;
+        min-height: 350px;
     }
-
+    
+    .carrera-hero__icon {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .carrera-hero__icon svg {
+        width: 85%;
+        height: 85%;
+        max-width: 55px;
+        max-height: 55px;
+    }
+    
+    .carrera-hero__title {
+        font-size: 1.5rem;
+    }
+    
+    .carrera-hero__subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .hero__badges {
+        flex-direction: column;
+        gap: 0.75rem;
+        width: 100%;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    
+    .badge {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+    }
+    
+    .nav__logo span {
+        display: none;
+    }
+    
+    .btn-back {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.7rem;
+    }
+    
+    footer .footer-section h3 {
+        font-size: 1.35rem;
+        text-align: center;
+    }
+    
+    footer .footer-section ul li {
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    footer .footer-section p {
+        font-size: 1rem;
+        text-align: center;
+    }
+    
+    footer .footer-carreras a {
+        font-size: 1rem;
+        text-align: center;
+    }
 }
 
 /* ========================================
@@ -832,85 +1120,4 @@ ul {
     background-color: var(--color-accent);
     color: var(--color-white);
     border-color: var(--color-accent);
-}
-
-@media (max-width: 768px){
-
-    footer{
-        .footer-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-        .footer-section {
-            h3{
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            ul{
-                li{
-                    font-size: 1.7rem;
-                    svg{
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-            }
-
-            p{
-                font-size: 1.7rem;
-                text-align: center;
-            }
-
-            .footer-carreras{
-                a{
-                    font-size: 1.7rem;
-                    line-height: 1;
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: 820px) and (max-width: 912px){
-    footer{
-        .footer-content {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .footer-section {
-            h3{
-                font-size: 2rem;
-                text-align: center;
-            }
-
-            ul{
-                li{
-                    font-size: 1.7rem;
-                    svg{
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-            }
-
-            p{
-                font-size: 1.7rem;
-                text-align: center;
-            }
-
-            .footer-carreras{
-                a{
-                    font-size: 1.7rem;
-                    line-height: 1;
-                }
-            }
-        }
-    }
 }
